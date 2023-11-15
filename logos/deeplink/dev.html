@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+     <script>
+        var scheme = "mts.kisvn.vn.dev"
+        function landingOrderAccountBook() {
+            window.location.href = scheme + "://account?tab=orderbook";
+        }
+       function landingMarketDetail() {
+            window.location.href = scheme + "://market/detail?symbol=SSI";
+        }
+    </script>
+</head>
+<body>
+
+<!-- 버튼 요소 -->
+<button type="button" onclick="landingMarketDetail()">종목상세 SSI</button>
+<button type="button" onclick="landingOrderAccountBook()">어카운트 오더북</button>
+
+</body>
+</html>
