@@ -15,8 +15,14 @@
         function landingIndexDetail() {
             window.location.href = scheme + "://discover/index/VN30";
         }
-         function landingOrderHistory() {
+        function landingOrderHistory() {
             window.location.href = scheme + "://order/history-list/C000006X1";
+        }
+        function landingEvent() {
+            window.location.href = scheme + "://marketing/event?require_authorized=true&url=https%3A%2F%2Fkisvn.vn%2F";
+        }
+        function landingBeginAccount() {
+            window.location.href = scheme + "://user/begin-open-account";
         }
     </script>
 </head>
@@ -28,6 +34,8 @@
 <!-- <button type="button" onclick="landingIndexDetail()">인덱스 상세 VN30</button> -->
 <button type="button" onclick="landingOrderAccountBook()">어카운트 오더북</button>  </br></br>
 <button type="button" onclick="landingOrderHistory()">오더 히스토리</button>  </br></br>
-
+<button type="button" onclick="landingEvent()">이벤트</button>  </br></br>
+<button type="button" onclick="landingBeginAccount()">계좌 개설안내</button>  </br></br>
+    
 </body>
 </html>
