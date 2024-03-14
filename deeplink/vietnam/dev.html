@@ -18,8 +18,11 @@
         function landingOrderHistory() {
             window.location.href = scheme + "://order/history-list/C000006X1";
         }
-        function landingEvent() {
+        function landingEventAuthTrue() {
             window.location.href = scheme + "://marketing/event?requireAuthorized=true&url=https%3A%2F%2Fkisvn.vn%2F";
+        }
+        function landingEventAuthFalse() {
+            window.location.href = scheme + "://marketing/event?requireAuthorized=false&url=https%3A%2F%2Fkisvn.vn%2F";
         }
         function landingBeginAccount() {
             window.location.href = scheme + "://user/begin-open-account";
@@ -46,7 +49,8 @@
 <!-- <button type="button" onclick="landingIndexDetail()">인덱스 상세 VN30</button> -->
 <button type="button" onclick="landingOrderAccountBook()">어카운트 오더북</button>  </br></br>
 <button type="button" onclick="landingOrderHistory()">오더 히스토리</button>  </br></br>
-<button type="button" onclick="landingEvent()">이벤트</button>  </br></br>
+<button type="button" onclick="landingEventAuthTrue()">이벤트 인증 필요</button>  </br></br>
+<button type="button" onclick="landingEventAuthFalse()">이벤트 인증 필요없음</button>  </br></br>
 <button type="button" onclick="landingBeginAccount()">계좌 개설안내</button>  </br></br>
 <button type="button" onclick="landingDiscover()">디스커버</button>  </br></br>
 <button type="button" onclick="landingWatchList()">워치리스트</button>  </br></br>
