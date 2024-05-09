@@ -15,8 +15,8 @@
         function landingIndexDetail() {
             window.location.href = scheme + "://discover/index/VN30";
         }
-        function landingOrderHistory() {
-            window.location.href = scheme + "://order/history-list/C000006X1";
+        function landingOrderHistory(accountNumber) {
+            window.location.href = scheme + "://order/history-list/" + accountNumber;
         }
         function landingEventAuthTrue() {
             window.location.href = scheme + "://marketing/event?require_authorized=true&url=https%3A%2F%2Fnaver.com%2F";
@@ -78,7 +78,7 @@
     <button type="button" onclick="landingOrderAccountBook('C000006X1')">어카운트 오더북 C000006X1</button>  </br></br>
 <button type="button" onclick="landingOrderAccountBook('C000006M1')">어카운트 오더북 C000006M1</button>  </br></br>
     <button type="button" onclick="landingOrderAccountBook('C000006D1')">어카운트 오더북 C000006d1</button>  </br></br>
-<button type="button" onclick="landingOrderHistory()">오더 히스토리</button>  </br></br>
+<button type="button" onclick="landingOrderHistory('C000006X1')">오더 히스토리 C000006X1</button>  </br></br>
 <button type="button" onclick="landingEventAuthTrue()">이벤트 인증 필요</button>  </br></br>
 <button type="button" onclick="landingEventAuthFalse()">이벤트 인증 필요없음</button>  </br></br>
 <button type="button" onclick="landingBeginAccount()">계좌 개설안내</button>  </br></br>
