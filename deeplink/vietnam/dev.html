@@ -6,10 +6,16 @@
     <title>Button Example</title>
      <script>
         var scheme = "mts.kisvn.vn.dev"
+        function landingAccountAsset() {
+            window.location.href = scheme + "://account/asset/" + document.getElementById('account_number').value;
+        }
+        function landingAccountPortfolio() {
+            window.location.href = scheme + "://account/portfolio/" + document.getElementById('account_number').value;
+        }
         function landingOrderAccountBook() {
             window.location.href = scheme + "://account/orderbook/" + document.getElementById('account_number').value;
         }
-       function landingMarketDetail() {
+        function landingMarketDetail() {
             window.location.href = scheme + "://market/detail/" + document.getElementById('symbol').value;
         }
         function landingIndexDetail() {
@@ -73,6 +79,8 @@ AccountNumber <input id="account_number" type="text" value="C000006X1" placehold
 Symbol <input id="symbol" type="text" value="SSI" placeholder="symbol"> </br></br>
 <button type="button" onclick="landingMarketDetail()">종목 상세</button> </br></br>
 <!-- <button type="button" onclick="landingIndexDetail()">인덱스 상세 VN30</button> -->
+<button type="button" onclick="landingAccountAsset()">어카운트 에셋</button>  </br></br>
+<button type="button" onclick="landingAccountPortfolio()">어카운트 포트폴리오</button>  </br></br>
 <button type="button" onclick="landingOrderAccountBook()">어카운트 오더북</button>  </br></br>
 <button type="button" onclick="landingOrderHistory()">오더 히스토리</button>  </br></br>
 <button type="button" onclick="landingEventAuthTrue()">이벤트 인증 필요</button>  </br></br>
