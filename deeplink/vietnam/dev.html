@@ -6,6 +6,10 @@
     <title>Button Example</title>
      <script>
         var scheme = "mts.kisvn.vn.dev"
+        
+        function landingRealInvestmentContestApply() {
+            window.location.href = scheme + "://real-investment-contest/apply/"  + document.getElementById('long_id').value;
+        }
         function landingAccountAsset() {
             window.location.href = scheme + "://account/asset/" + document.getElementById('account_number').value;
         }
@@ -74,6 +78,7 @@
 
 AccountNumber <input id="account_number" type="text" value="C000006X1" placeholder="accountNumber"> </br></br>
 Symbol <input id="symbol" type="text" value="SSI" placeholder="symbol"> </br></br>
+Long_ID <input id="long_id" type="text" value="0" placeholder="long type id"> </br></br>
 <button type="button" onclick="landingMarketDetail()">종목 상세</button> </br></br>
 <!-- <button type="button" onclick="landingIndexDetail()">인덱스 상세 VN30</button> -->
 <button type="button" onclick="landingAccountAsset()">어카운트 에셋</button>  </br></br>
