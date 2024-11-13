@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+     <script>
+        var scheme = "mts.ikis.id.staging"
+        function landingOrderAccountBook() {
+            window.location.href = scheme + "://account/orderbook";
+        }
+       function landingMarketDetail(symbol) {
+            window.location.href = scheme + "://market/detail/" + symbol;
+        }
+        function landingIndexDetail() {
+            window.location.href = scheme + "://discover/index/VN30";
+        }
+        function landingOrderHistory() {
+            window.location.href = scheme + "://order/history-list/C000006X1";
+        }
+        function landingEventAuthTrue() {
+            window.location.href = scheme + "://marketing/event?require_authorized=true&url=https%3A%2F%2Fnaver.com%2F";
+        }
+        function landingEventAuthFalse() {
+            window.location.href = scheme + "://marketing/event?require_authorized=false&url=https%3A%2F%2Fnaver.com%2F";
+        }
+        function landingBeginAccount() {
+            window.location.href = scheme + "://user/begin-open-account";
+        }
+        function landingWatchList() {
+            window.location.href = scheme + "://watch-list";
+        }
+        function landingDiscover() {
+            window.location.href = scheme + "://discover";
+        }
+        function landingSearch() {
+            window.location.href = scheme + "://search";
+        }
+        function landingAccount() {
+            window.location.href = scheme + "://account";
+        }
+        function landingApp() {
+            window.location.href = scheme + "://";
+        }
+         
+        function landingLogin() {
+            window.location.href = scheme + "://user/login";
+        }
+
+        function landingLogin() {
+            window.location.href = scheme + "://user/login";
+        }
+
+        function landingEventLogin() {
+            window.location.href = scheme + "://marketing/login/event?url=https%3A%2F%2Fnaver.com%2F";
+        }
+        function landingRoulette() {
+            window.location.href = scheme + "://marketing/event?require_authorized=false&url=https%3A%2F%2Ftrading.kisvn.vn%2Fevent%2F";
+        }
+         
+        function landingPortfolio() {
+            window.location.href = scheme + "://account/portfolio";
+        }
+
+        function landingAccountAsset() {
+            window.location.href = scheme + "://account/asset";
+        }
+    </script>
+</head>
+<body>
+
+<!-- 버튼 요소 -->
+<button type="button" onclick="landingMarketDetail('SSI')">종목 상세 SSI</button> </br></br>
+<button type="button" onclick="landingMarketDetail('AVS')">종목 상세 AVS</button>  </br></br>
+<!-- <button type="button" onclick="landingIndexDetail()">인덱스 상세 VN30</button> -->
+<button type="button" onclick="landingOrderAccountBook()">어카운트 오더북</button>  </br></br>
+<button type="button" onclick="landingOrderHistory()">오더 히스토리</button>  </br></br>
+<button type="button" onclick="landingEventAuthTrue()">이벤트 인증 필요</button>  </br></br>
+<button type="button" onclick="landingEventAuthFalse()">이벤트 인증 필요없음</button>  </br></br>
+<button type="button" onclick="landingBeginAccount()">계좌 개설안내</button>  </br></br>
+<button type="button" onclick="landingDiscover()">디스커버</button>  </br></br>
+<button type="button" onclick="landingWatchList()">워치리스트</button>  </br></br>
+<button type="button" onclick="landingSearch()">검색</button>  </br></br>
+<button type="button" onclick="landingAccount()">어카운트</button>  </br></br>
+<button type="button" onclick="landingApp()">앱실행</button>  </br></br>
+<button type="button" onclick="landingLogin()">로그인</button>  </br></br>
+<button type="button" onclick="landingEventLogin()">이벤트 로그인 필수</button>  </br></br>
+<button type="button" onclick="landingRoulette()">룰렛 이벤트</button>  </br></br>
+<button type="button" onclick="landingPortfolio()">포트 폴리오</button>  </br></br>
+<button type="button" onclick="landingAccountAsset()">어카운트 에셋</button>  </br></br>
+    
+</body>
+</html>
